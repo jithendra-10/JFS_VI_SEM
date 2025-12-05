@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Course Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Course Registration</h1>
+
+    <div class="container">
+        <form id="regForm">
+            
+            <label for="Name">Student Name:</label>
+            <input type="text" id="Name" placeholder="Enter your name" required><br>
+
+            <label>Select Course:</label>
+
+            <div class="subject-list">
+
+                <label>
+                    <input type="checkbox" name="course" value="1000">
+                    Data Structures ($1000)
+                </label>
+
+                <label>
+                    <input type="checkbox" name="course" value="1200">
+                    Algorithms ($1200)
+                </label>
+
+                <label>
+                    <input type="checkbox" name="course" value="1800">
+                    Operating Systems ($1800)
+                </label>
+
+                <label>
+                    <input type="checkbox" name="course" value="1600">
+                    DBMS ($1600)
+                </label>
+
+                <label>
+                    <input type="checkbox" name="course" value="2000">
+                    AI ($2000)
+                </label>
+
+            </div>
+
+            <div class="total-box">
+                Total Registration Fee :
+                <span id="total">$0</span>
+            </div>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
